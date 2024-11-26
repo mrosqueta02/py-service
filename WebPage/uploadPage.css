@@ -1,0 +1,139 @@
+.nav {
+    background-color: #7ED957;
+    width: 100vw;
+    text-align: left;
+    padding: 1vw;
+}
+
+.nav > a:hover {
+    text-transform: none;
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: 'B612';
+}
+
+.mainPageLink {
+    margin-left: 1vw;
+    font-size: 2vw;
+    color: black;
+    text-decoration: none;
+    text-transform: none;
+    font-style: italic;
+    font-family: 'B612';
+    font-weight: bold;
+}
+
+.btnUpload {
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    width: 30%;
+    height: 2px;
+    background-color: black;
+    margin: 20px auto;
+}
+
+.bg {
+    background-color: #bdebaa;
+    border-radius: 25px;
+    border: 2px solid black;
+    width: 20vw; 
+    height: 20vh;
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controller {
+    text-align: center;
+}
+
+label {
+    font-family: 'B612';
+    border: 2px solid #7ED957;
+    background-color: #7ED957;
+    color: white;
+    font-size: 1.5vw;
+    padding: 1.5vh 2vw;
+    width: 15vw; 
+    height: 7vh;
+    display: inline-flex; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 10px;
+}
+
+label:hover{
+    color:black;
+}
+
+.btnDownload > a {
+    font-family: 'B612';
+    border: 2px solid #7ED957;
+    background-color: #7ED957;
+    color: white;
+    font-size: 1.5vw;
+    padding: 1.5vh 2vw;
+    width: 15vw; 
+    height: 7vh; 
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center; 
+    border-radius: 10px; 
+}
+
+input#fileInput{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mainPageLink {
+        font-size: 4vw; 
+    }
+
+    .nav {
+        padding: 2vw; 
+    }
+
+    .btnUpload {
+        margin-top: 10vh; 
+    }
+
+    .bg {
+        width: 70vw;
+        height: auto; 
+    }
+
+    .btnDownload > a,
+    .bg > a {
+        font-size: 4vw;
+        padding: 2vh 4vw;
+        width: auto; 
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainPageLink {
+        font-size: 5vw;
+    }
+
+    .bg {
+        padding: 0; 
+    }
+
+    .btnDownload > a,
+    .bg > a {
+        font-size: 5vw; 
+        padding: 3vh 5vw; 
+        width: auto;
+        max-width: 90%;
+    }
+}

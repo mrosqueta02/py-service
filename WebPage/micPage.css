@@ -1,0 +1,84 @@
+.nav {
+    background-color: #7ED957;
+    width: 100vw;
+    height: auto;
+    text-align: left;
+    padding: 1vw;
+}
+.nav > a:hover {
+    text-transform: none;
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: 'B612';
+}
+.mainPageLink {
+    margin-left: 1vw;
+    font-size: 2vw;
+    color: black;
+    text-decoration: none;
+    text-transform: none;
+    font-style: italic;
+    font-family: 'B612';
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .mainPageLink {
+        font-size: 4vw;
+    }
+    .nav {
+        height: auto;
+        padding: 2vw;
+    }
+}
+.controller{
+    display:grid;
+    grid-template-columns: 34% 1% 65%;
+    text-align: center;
+}
+.box{
+    background-color: #bdebaa;
+    width: max-content;
+    height: max-content;
+    padding: 20px;
+    font-family:'ABeeZee';
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+.line1{
+    width: 60%;
+    height: 2px;
+    text-align: center;
+    background-color: black;
+    margin-bottom: 35px;
+    border-radius: 25px;
+}
+.divider{
+    border: 2px solid black;
+    height: 85vh;
+    width: 1px;
+    background-color: black;
+    padding: 0px;
+    margin: 25px;
+    border-radius: 25px;
+}
+.output{
+    margin-top: 35px;
+    border: 1px solid black;
+    height: 75.7vh;
+    width: 50vw;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left{
+    padding-top: 9vh;
+}
+.right{
+    padding-top: 9vh;
+}

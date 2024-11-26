@@ -1,0 +1,83 @@
+.nav {
+    background-color: #7ED957;
+    width: 100vw;
+    height: auto; /* Allow the height to adjust based on the content */
+    text-align: left;
+    padding: 1vw;
+}
+.nav > a:hover {
+    text-transform: none;
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: 'B612';
+}
+.mainPageLink {
+    margin-left: 1vw;
+    font-size: 2vw;
+    color: black;
+    text-decoration: none;
+    text-transform: none;
+    font-style: italic;
+    font-family: 'B612';
+    font-weight: bold;
+}
+.controller {
+    display: flex;
+    justify-content: center; /* Centers the cards horizontally */
+    align-items: center;
+    gap: 10vw; /* Space between left and right cards */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    padding: 10vh 0; /* Add some padding for spacing instead of using height */
+}
+
+.left, .right {
+    display: flex;
+    justify-content: center; /* Centers the cards in each column */
+    align-items: center;
+    width: 20vw; /* Card width in desktop view */
+}
+.card {
+    text-align: center;
+    width: 100%; /* Let the card take full width inside its container */
+    margin-bottom: 1.5vw;
+}
+.cardbody {
+    background-color: #E1FFBA;
+    padding: 1vw;
+}
+.cardtext {
+    font-family: 'ABeeZee';
+    font-size: 1vw;
+}
+.cardbody > a {
+    font-family: 'ABeeZee';
+    border: 2px solid #7ED957;
+    background-color: #7ED957;
+    color: white;
+    font-size: 1.2vw;
+}
+
+@media (max-width: 768px) {
+    .controller {
+        flex-direction: column;
+        padding: 5vh 0;
+        gap: 5vh;
+    }
+
+    .left, .right {
+        width: 80vw;
+    }
+    .mainPageLink {
+        font-size: 4vw;
+    }
+    .nav {
+        height: auto;
+        padding: 2vw;
+    }
+    .cardtext, .cardbody > a {
+        font-size: 3vw;
+    }
+}
